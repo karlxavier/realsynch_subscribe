@@ -30,13 +30,13 @@ Rails.application.configure do
   end
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  # config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
 
   # config.assets.initialize_on_precompile = false
-  config.serve_static_assets = true
+  # config.serve_static_assets = true
   # config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
