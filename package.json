@@ -1,5 +1,8 @@
 {
   "name": "realsynch_subscribe",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bundle": "^0.2.3",
+    "install": "^0.10.1"
+  }
 }
