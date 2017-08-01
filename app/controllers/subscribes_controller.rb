@@ -20,6 +20,7 @@ class SubscribesController < ApplicationController
 				format.js
 			else
 				puts '********* ERROR ********'
+				render 'new'
 			end
 		end
 	end
