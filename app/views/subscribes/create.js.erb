@@ -1,0 +1,5 @@
+$('#modal-shows').replaceWith('<%= j render partial: "say_thanks" %>');
+$('#modal-shows').modal('show');
+$('#modal-shows').on('hidden.bs.modal', function () {
+ location.reload();
+})

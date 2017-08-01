@@ -1,0 +1,39 @@
+<%= form_for @subscribe, remote: true do |f| %>
+	<h2 style="margin-bottom: 5px;">Subscribe Now!</h2>
+    <p style="margin-top: 0;">Don’t miss this Great Opportunity</p>
+
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label for="name" class="sr-only control-label">Name</label>
+            <%= f.text_field :name, class: "form-control input-lg", placeholder: "Name", required: "" %>
+            <span class="help-block text-danger"></span>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label for="name" class="sr-only control-label">Company</label>
+            <%= f.text_field :company, class: "form-control input-lg", placeholder: "Your Company" %>
+            <span class="help-block text-danger"></span>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-lg-6 floating-label-form-group controls no-pad-right">
+            <label for="email" class="sr-only control-label">Email</label>
+            <%= f.email_field :email, class: "form-control input-lg", placeholder: "e-mail", required: "" %>
+            <span class="help-block text-danger"></span>
+        </div>
+        <div class="form-group col-lg-6 floating-label-form-group controls">
+            <label for="phone" class="sr-only control-label">You Phone</label>
+            <%= f.text_field :phone, class: "form-control input-lg", placeholder: "Phone" %>
+            <span class="help-block text-danger"></span>
+        </div>
+    </div>
+    <div id="success"></div>
+    <div class="row">
+        <div class="form-group col-xs-12">
+            <%= button_tag(type: 'Submit', class: "btn btn-lg btn-warning btn-block") do %>
+		        <i class="icon-ok icon-white"></i> Subscribe
+		    <% end %> 
+        </div>
+    </div>
+<% end %>
