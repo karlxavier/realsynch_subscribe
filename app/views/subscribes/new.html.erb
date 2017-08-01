@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1">
-                    <%= form_for @subscribe, remote: true, authenticity_token: true do |f| %>
+                    <%= form_for @subscribe, remote: true, format: :js, authenticity_token: true do |f| %>
                         <h2 style="margin-bottom: 5px;">Subscribe Now!</h2>
                         <p style="margin-top: 0;">Don’t miss this Great Opportunity</p>
 
