@@ -30,6 +30,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'devise', git: 'https://github.com/gogovan/devise.git', branch: 'rails-5.1'
+gem 'rails_12factor'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
