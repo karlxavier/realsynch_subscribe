@@ -11,6 +11,7 @@ class SubscribesController < ApplicationController
 
 	def new
 		@subscribe = Subscribe.new
+		@subscribe.broker_checkboxes.build
 	end
 
 	def create
@@ -28,7 +29,7 @@ class SubscribesController < ApplicationController
 	private
 
 		def subscribe_params
-			params.require(:subscribe).permit(:name, :email, :phone, :company)
+			params.require(:subscribe).permit(:firstname, :lastname, :email, :phone, :company, broker_checkboxes_attributes: [:agent_lead, :boom_town, :brivity, :commision_inc, :lone_wolf, :real_geeks, :rethink, :real_webmaster, :top_producer, :voicepad, :vulcan7, :proquest, :other])
 		end
 
 end

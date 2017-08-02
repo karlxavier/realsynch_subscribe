@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170801100005) do
+ActiveRecord::Schema.define(version: 20170802082819) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,25 @@ ActiveRecord::Schema.define(version: 20170801100005) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
+  create_table "broker_checkboxes", force: :cascade do |t|
+    t.integer "subscribe_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "agent_lead", default: false
+    t.boolean "boom_town", default: false
+    t.boolean "brivity", default: false
+    t.boolean "commision_inc", default: false
+    t.boolean "lone_wolf", default: false
+    t.boolean "real_geeks", default: false
+    t.boolean "rethink", default: false
+    t.boolean "real_webmaster", default: false
+    t.boolean "top_producer", default: false
+    t.boolean "voicepad", default: false
+    t.boolean "vulcan7", default: false
+    t.boolean "proquest", default: false
+    t.string "other"
+  end
+
   create_table "subscribes", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -40,6 +59,8 @@ ActiveRecord::Schema.define(version: 20170801100005) do
     t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "firstname"
+    t.string "lastname"
   end
 
 end

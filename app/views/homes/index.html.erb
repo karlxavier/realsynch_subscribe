@@ -1,0 +1,50 @@
+<div class="pace  pace-inactive">
+	<div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  		<div class="pace-progress-inner"></div>
+	</div>
+	<div class="pace-activity"></div>
+</div>
+
+<section id="home-bg-slider" class="bg-overlay-black-5 h-100 p-0 w-100">
+    <div class="carousel-custom carousel-fullscreen flickity-enabled" data-pagedots="true" data-draggable="false" data-autoplay="5000" tabindex="0" style="color: rgb(255, 255, 255);">
+    	<div class="carousel-cell carousel-cell bg-cover bg-overlay-black-5 h-100 w-100 is-selected">
+            <div class="container h-100">
+
+            </div>
+            <!-- //.container -->
+        </div>
+        <div class="carousel-cell carousel-cell bg-cover bg-overlay-black-5 h-100 w-100">
+            <div class="container h-100">
+            </div>
+            <!-- //.container -->
+        </div>
+        <div class="carousel-cell carousel-cell bg-cover bg-overlay-black-5 h-100 w-100">
+            <div class="container h-100">
+            </div>
+            <!-- //.container -->
+        </div>   
+    </div>
+
+</section>
+
+<div class="main-text hidden-xs">
+    <div class="col-md-12 text-center">
+        <h1 style="margin-bottom: 2px;"><span style="color: #337ab7;">REAL</span> <span style="color: #f2b826;">SYNCH</span></h1>
+        <h2 style="margin-top: 2px; margin-bottom: 5px;">Connecting the Real Estate Industry</h2>
+        <small style="margin-top: 2px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+        <div style="margin-top: 50px;">
+            <div class="btn-group">
+                <button data-toggle="dropdown" class="btn btn-primary btn-bg btn-min-block dropdown-toggle" aria-expanded="false">See Demo <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><%= link_to 'Broker', new_subscribe_path %></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Tech Vendor</a></li>
+                </ul>
+            </div>
+            <%= link_to root_path, class: "btn btn-warning btn-bg btn-min-block" do %>
+            	<i class="fa fa-phone" aria-hidden="true"></i> Contact Us
+            <% end %>
+        </div>
+    </div>
+</div>
+
