@@ -8,7 +8,7 @@
 */
 
 .bg-base-color {
-    background-color: #ff1a56 !important;
+    background-color: #337ab7 !important;
 }
 
 
@@ -17,7 +17,7 @@
 */
 
 .border-base-color {
-    border-color: #ff1a56 !important;
+    border-color: #ec971f !important;
 }
 
 
@@ -26,7 +26,7 @@
 */
 
 .btn-base-color {
-    background-color: #ff1a56 !important;
+    background-color: #ec971f !important;
 }
 
 
@@ -35,7 +35,7 @@
 */
 
 .btn-hover-base-color:hover {
-    background-color: #ff1a56 !important;
+    background-color: #ec971f !important;
 }
 
 
@@ -44,7 +44,7 @@
 */
 
 .carousel-custom .flickity-page-dots .dot.is-selected {
-    background: #ff1a56;
+    background: #ec971f;
 }
 
 
@@ -53,13 +53,13 @@
 */
 
 .title-underline-base-color {
-    border-color: #ff1a56;
+    border-color: #ec971f;
 }
 .title-underline-thick-base-color {
-    border-color: #ff1a56;
+    border-color: #ec971f;
 }
 .title-sideline-base-color:before {
-    background-color: #ff1a56;
+    background-color: #ec971f;
 }
 
 
@@ -68,7 +68,7 @@
 */
 
 .pace .pace-progress {
-    background-color: #ff1a56;
+    background-color: #ec971f;
 }
 
 
@@ -77,7 +77,7 @@
 */
 
 .text-base-color {
-    color: #ff1a56 !important;
+    color: #ec971f !important;
 }
 
 
@@ -86,14 +86,14 @@
 */
 
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #ff1a56 transparent transparent;
+    border-color: transparent #ec971f transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #ff1a56 transparent transparent transparent;
+    border-color: #ec971f transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #ff1a56 transparent;
+    border-color: transparent transparent #ec971f transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #ff1a56;
+    border-color: transparent transparent transparent #ec971f;
 }

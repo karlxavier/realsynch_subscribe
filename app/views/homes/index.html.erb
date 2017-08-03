@@ -1,4 +1,4 @@
-<div class="pace  pace-inactive">
+<div class="pace  pace-inactive" id="top">
 	<div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
   		<div class="pace-progress-inner"></div>
 	</div>
@@ -9,7 +9,6 @@
     <div class="carousel-custom carousel-fullscreen flickity-enabled" data-pagedots="true" data-draggable="false" data-autoplay="5000" tabindex="0" style="color: rgb(255, 255, 255);">
     	<div class="carousel-cell carousel-cell bg-cover bg-overlay-black-5 h-100 w-100 is-selected">
             <div class="container h-100">
-
             </div>
             <!-- //.container -->
         </div>
@@ -24,27 +23,274 @@
             <!-- //.container -->
         </div>   
     </div>
-
 </section>
-
 <div class="main-text hidden-xs">
     <div class="col-md-12 text-center">
         <h1 style="margin-bottom: 2px;"><span style="color: #337ab7;">REAL</span> <span style="color: #f2b826;">SYNCH</span></h1>
         <h2 style="margin-top: 2px; margin-bottom: 5px;">Connecting the Real Estate Industry</h2>
         <small style="margin-top: 2px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
         <div style="margin-top: 50px;">
-            <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-primary btn-bg btn-min-block dropdown-toggle" aria-expanded="false">See Demo <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><%= link_to 'Broker', new_subscribe_path %></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Tech Vendor</a></li>
-                </ul>
-            </div>
+            <button id="open-modal" data-toggle="modal" data-target="#modal-dialogx" class="btn btn-primary btn-bg btn-min-block" aria-expanded="false">
+               	<i class="fa fa-video-camera" aria-hidden="true"></i>
+               	See Demo 
+            </button>
             <%= link_to root_path, class: "btn btn-warning btn-bg btn-min-block" do %>
             	<i class="fa fa-phone" aria-hidden="true"></i> Contact Us
             <% end %>
         </div>
     </div>
 </div>
+<section class="bg-gray-light pb-0" style="padding: 50px 0;">
+	<div class="container">
+		<div class="row justify-content-center pb-4 pb-lg-5">
+			<div class="col-lg-12 text-center">
+                <h2>Integration</h2>
+                <p class="mt-4 text-xs-large text-extra-large">
+                <i>It’s not just connecting apps and sharing data – It’s about accelerating and delivering business value and innovation.</i></p>
+            </div>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top: 60px;">
+		<div class="row">
+			<div class="col-sm-6 col-lg-4 px-0" style="overflow: hidden;">
+				<a class="page-scroll" href="#automate">
+					<div class="position-relative">
+						<%= image_tag 'services-1.png', class: "img-fluid" %>
+						<div class="bg-white position-relative p-5" data-mh="mh-our-services" style="height: 272px;">
+	                        <!-- Triangle -->
+	                        <span class="triangle-top-left triangle-gray-dark left-0 opacity-2-5 position-absolute top-0"></span>
+	                        
+	                        <!-- Icon -->
+	                        <span class="icon bg-base-color text-white rounded-circle">
+	                        	<i class="fa fa-gear"></i>
+	                        </span>
+	                        
+	                        <h4>Automate and Streamline processes</h4>
+	                        <span class="bg-base-color mt-3 sep-line-thick"></span>
+	                    </div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-6 col-lg-4 px-0" style="overflow: hidden;">
+				<a class="page-scroll" href="#future">
+					<div class="position-relative">
+						<%= image_tag 'services-2.jpg', class: "img-fluid" %>
+						<div class="bg-white position-relative p-5" data-mh="mh-our-services" style="height: 272px;">
+	                        <!-- Triangle -->
+	                        <span class="triangle-top-left triangle-gray-dark left-0 opacity-2-5 position-absolute top-0"></span>
+	                        
+	                        <!-- Icon -->
+	                        <span class="icon bg-base-color text-white rounded-circle"><i class="fa fa-line-chart"></i></span>
+	                        
+	                        <h4>Future Proofing Business</h4>
+	                        <span class="bg-base-color mt-3 sep-line-thick"></span>
+	                    </div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-6 col-lg-4 px-0" style="overflow: hidden;">
+				<a class="page-scroll" href="#competitive">
+					<div class="position-relative">
+						<%= image_tag 'services-3.jpg', class: "img-fluid" %>
+						<div class="bg-white position-relative p-5" data-mh="mh-our-services" style="height: 272px;">
+	                        <!-- Triangle -->
+	                        <span class="triangle-top-left triangle-gray-dark left-0 opacity-2-5 position-absolute top-0"></span>
+	                        
+	                        <!-- Icon -->
+	                        <span class="icon bg-base-color text-white rounded-circle"><i class="fa fa-trophy"></i></span>
+	                        
+	                        <h4>Competitive Edge</h4>
+	                        <span class="bg-base-color mt-3 sep-line-thick"></span>
+	                    </div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="app-features text-center">
+	<div class="container">
+		<div class="col-md-4 features-left">
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-users"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Visibility for Agents and Coordinators who don’t have access to critical applications/data.</p>
+	            </div>
+			</div>
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-clock-o"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Eliminating manual duplicate data entry (Time and Accuracy).</p>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-4" id="automate" style="padding-top: 8%;">
+			<i class="fa fa-cogs big-icon" style="top: 50%;"></i>
+			<h2>Automate and Streamline processes</h2>
+		</div>
+		<div class="col-md-4 features-left">
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-bolt"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Real-time Actions and Reporting on Client Acquisition Cost.</p>
+	            </div>
+			</div>
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-area-chart"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Getting more insight on KPIs to Forecast a pipeline for the business.</p>
+	            </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="app-features text-center" style="margin-top: 50px;">
+	<div class="container">
+		<div class="col-md-4 features-left">
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-comments"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Flexibility to manage change and do more with less.</p>
+	            </div>
+			</div>
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-code"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Reduction of dependency on brittle “custom coded” connections - developer dependent SPF (“Single point of Failure”).</p>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-4" id="future" style="padding-top: 8%;">
+			<i class="fa fa-pie-chart big-icon" style="top: 50%;"></i>
+			<h2>Future Proofing Business</h2>
+		</div>
+		<div class="col-md-4 features-left">
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-cloud"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Scalability to meet future growth needs.</p>
+	            </div>
+			</div>
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-server"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Standardize on modern and robust technologies to break down the restrictions of the past.</p>
+	            </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="app-features text-center" style="margin-top: 50px;">
+	<div class="container">
+		<div class="col-md-4 features-left">
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-handshake-o"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Being easier to do business with than your competition.</p>
+	            </div>
+			</div>
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-history"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Reducing and eliminating friction in the sales process throughout customer lifecycle.</p>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-4" id="competitive" style="padding-top: 8%;">
+			<i class="fa fa-trophy big-icon" style="top: 50%;"></i>
+			<h2>Competitive Edge</h2>
+		</div>
+		<div class="col-md-4 features-left">
+			<div class="col-md-12">
+				<div class="iconx">
+	                <i class="fa fa-users"></i>
+	            </div>
+	            <div class="feature-single">
+	            	<p>Enabling all roles to be more efficient and effective (inside Sales, outside Agents, Coordinators, Vendors).</p>
+	            </div>
+			</div>
+		</div>
+	</div>
+</div>
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;">
+	<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+</a>
+<div class="modal inmodal" role="dialog" id="modal-dialogx">
+    <div class="modal-content animated flipInY" style="width: 600px;margin: 30px auto;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Your type of customer:</h4>
+        </div>
+        <div class="modal-body text-center">
+        	<%= link_to new_subscribe_path, class: "btn btn-primary btn-bg btn-min-block" do %>
+               	<i class="fa fa-pie-chart" aria-hidden="true"></i>
+               	Broker
+            <% end %>
+            <button id="open-modal" data-toggle="modal" data-target="#modal-dialogx" class="btn btn-primary btn-bg btn-min-block" aria-expanded="false">
+               	<i class="fa fa-code" aria-hidden="true"></i>
+               	Tech Vendor
+            </button>
+        </div>
+    </div>
+</div>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+</script>
+<script type="text/javascript">
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() < 200) { //use `this`, not `document`
+	        $('#scrollUp').css({
+	            'display': 'none'
+	        });
+	    }
+	    else {
+	    	$('#scrollUp').css({
+	            'display': 'block'
+	        });
+	    }
+	});
+</script>
