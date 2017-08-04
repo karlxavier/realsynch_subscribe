@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170803172317) do
+ActiveRecord::Schema.define(version: 20170804144818) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,8 @@ ActiveRecord::Schema.define(version: 20170803172317) do
     t.boolean "vulcan7", default: false
     t.boolean "proquest", default: false
     t.string "other"
+    t.boolean "firepoint", default: false
+    t.boolean "mojo", default: false
   end
 
   create_table "number_of_agents", force: :cascade do |t|

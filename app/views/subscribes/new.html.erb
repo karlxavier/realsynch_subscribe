@@ -46,7 +46,7 @@
                                 </div>
                                 <div class="row control-group">
                                     <div class="form-group col-lg-12 floating-label-form-group controls" style="padding-right: 15px;">
-                                        <%= f.collection_select :number_of_agents_id, NumberOfAgent.order(:agents),:id,:agents, {prompt: "How many agents?"}, {class: "form-control required",style: "height: 45px;padding: 10px 0;font-size: 18px;line-height: 1.3333333;"} %>
+                                        <%= f.collection_select :number_of_agents_id, NumberOfAgent.order(:agents),:id,:agents, {prompt: "How many agents?"}, {class: "form-control",style: "height: 45px;padding: 10px 0;font-size: 18px;line-height: 1.3333333;"} %>
                                     </div>
                                 </div>
 
@@ -90,6 +90,12 @@
                                                         Vulcan7
                                                     </label>
                                                 </div>
+                                                <div class="col-md-12" style="text-align: left;">
+                                                    <label class="category-select switchbox_chery">
+                                                        <%= builder.check_box(:firepoint, {checked: (:firepoint ? false : true) ,:class=> 'switch1'}, false, true) %>
+                                                        Firepoint
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group col-lg-6">
@@ -127,7 +133,13 @@
                                                 <div class="col-md-12" style="text-align: left;">
                                                     <label class="category-select switchbox_chery">
                                                         <%= builder.check_box(:commision_inc, {checked: (:commision_inc ? false : true) ,:class=> 'switch1'}, false, true) %>
-                                                        Commision Inc. FirePoint
+                                                        Commision Inc.
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-12" style="text-align: left;">
+                                                    <label class="category-select switchbox_chery">
+                                                        <%= builder.check_box(:mojo, {checked: (:mojo ? false : true) ,:class=> 'switch1'}, false, true) %>
+                                                        Mojo
                                                     </label>
                                                 </div>
                                             </div>
@@ -160,24 +172,24 @@
 </header>
 
 <script type="text/javascript">
-    
-        $(document).ready(function(){
+    $(document).ready(function(){
 
-            var elems = Array.prototype.slice.call(document.querySelectorAll('.switch1'));
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.switch1'));
 
-            elems.forEach(function(html) {
-              var switchery = new Switchery(html);
-            });
-
-            var elem = document.querySelector('.js-switch');
-            var switchery = new Switchery(elem, { color: '#1AB394' });
-
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
         });
+
+        var elem = document.querySelector('.js-switch');
+        var switchery = new Switchery(elem, { color: '#1AB394' });
+
+    });
 </script>   
 <script type="text/javascript">
-    $(function() {
-
+    // (function() {
+    //     alert("empty");
         $('.required').keyup(function() {
+// alert("empty");
             var empty = false;
             $('.required').each(function() {
                 if ($(this).val() == '') {
@@ -193,5 +205,5 @@
                 $('#watch_video').removeAttr('disabled');
             }
         });
-    })()
+    // })
 </script>

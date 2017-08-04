@@ -29,7 +29,7 @@ class SubscribesController < ApplicationController
 	private
 
 		def subscribe_params
-			params.require(:subscribe).permit(:firstname, :lastname, :email, :phone, :company, :number_of_agents_id, broker_checkboxes_attributes: [:agent_lead, :boom_town, :brivity, :commision_inc, :lone_wolf, :real_geeks, :rethink, :real_webmaster, :top_producer, :voicepad, :vulcan7, :proquest, :other])
+			params.require(:subscribe).permit(:firstname, :lastname, :email, :phone, :company, :number_of_agents_id, broker_checkboxes_attributes: [:agent_lead, :boom_town, :brivity, :commision_inc, :lone_wolf, :real_geeks, :rethink, :real_webmaster, :top_producer, :voicepad, :vulcan7, :proquest, :other, :firepoint, :mojo])
 		end
 
 end
