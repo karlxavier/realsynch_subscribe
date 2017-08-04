@@ -1,0 +1,2 @@
+module FakeUiHelper
+end

@@ -448,3 +448,59 @@ section {
 .onoffswitch-checkbox:disabled + .onoffswitch-label .onoffswitch-switch {
   border-color: #919191;
 }
+
+.wizard > .content {
+	height: 300px;
+}
+.iradio_square-green {
+    background-position: -120px 0;
+}
+.icheckbox_square-green, .iradio_square-green {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background-image: image-url("green.png");
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 10px;
+  background-color: #ed5565;
+}
+#myProgress2 {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar2 {
+  width: 1%;
+  height: 10px;
+  background-color: #ed5565;
+}
+
+.p-lg {
+    padding: 30px;
+}
+
+.navy-bg, .bg-primary {
+    background-color: #1ab394;
+    color: #ffffff;
+}
+
+.widget {
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
