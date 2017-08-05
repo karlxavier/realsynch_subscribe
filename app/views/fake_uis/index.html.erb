@@ -184,13 +184,28 @@
         </div>
     </div>
 </div>
+<div class="modal inmodal" role="dialog" id="modal-dialogx">
+    <div class="modal-content animated flipInY" style="width: 600px;margin: 30px auto;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body text-center">
+            <h2><i>Successfully Activated!</i></h2>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
     $("#wizard").steps({
         headerTag: "h3",
         bodyTag: "section",
         transitionEffect: "slideLeft",
-        autoFocus: true
+        autoFocus: true,
+        onFinished: function (event, currentIndex)
+        {
+            $('#modal-dialogx').modal();
+        }
     });
 </script>
 <script type="text/javascript">
